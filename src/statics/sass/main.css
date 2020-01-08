@@ -88,6 +88,16 @@ code {
   margin: 0 1rem;
   color: white;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.task__button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.task__button:active {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 .task__button:focus {
   outline: none;
