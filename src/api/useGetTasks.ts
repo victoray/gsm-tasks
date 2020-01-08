@@ -1,5 +1,6 @@
 import gsmtasks from "./gsmtasks";
 import {useDispatch} from "react-redux";
+import {GET_TASKS} from "../reducers";
 
 export const useGetTasks = () => {
     const dispatch = useDispatch();
@@ -8,7 +9,7 @@ export const useGetTasks = () => {
         gsmtasks.get("/")
             .then(response => {
                 console.log(response.data);
-                dispatch({type: "", payload: response.data});
+                dispatch({type: GET_TASKS, payload: response.data});
             });
     };
 

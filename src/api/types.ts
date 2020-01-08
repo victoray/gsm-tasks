@@ -1,4 +1,5 @@
 export interface Task {
+    id: string;
     address: {
         location: {
             type: "Point"
