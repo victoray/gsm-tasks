@@ -1,0 +1,45 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &__header {
+    height: 10rem;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: lightgrey;
+    align-self: stretch;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 1.5rem;
+    margin: 1rem;
+    align-self: stretch;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    padding: 2rem;
+    border: none;
+    background-color: deepskyblue;
+    border-radius: 3px;
+    font-size: 2rem;
+    align-self: flex-end;
+    margin: 0 1rem;
+    color: white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

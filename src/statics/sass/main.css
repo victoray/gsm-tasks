@@ -28,4 +28,45 @@ code {
   grid-template-columns: 2fr 1fr;
 }
 
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.task__header {
+  height: 10rem;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: lightgrey;
+  align-self: stretch;
+  margin-bottom: 2rem;
+}
+.task__input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1.5rem;
+  margin: 1rem;
+  align-self: stretch;
+}
+.task__input:focus {
+  outline: none;
+}
+.task__button {
+  padding: 2rem;
+  border: none;
+  background-color: deepskyblue;
+  border-radius: 3px;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin: 0 1rem;
+  color: white;
+  cursor: pointer;
+}
+.task__button:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=main.css.map */
