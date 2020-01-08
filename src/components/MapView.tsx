@@ -18,21 +18,20 @@ interface MarkerView {
 
 const MapView = ({google}: MapView) => {
     const tasks = useSelector((state: any) => state.tasks);
-
-    //adjust zoomLevel based on the size of tasks
-    const zoomLevel = 12 - tasks.length / tasks.length * 1.5;
+    const bounds = new google.maps.LatLngBounds();
 
     return (
         <>
             {
                 // @ts-ignore
                 <Map google={google} style={style} initialCenter={{lat: 59.4370, lng: 24.7536}}
-                     zoom={zoomLevel}>
+                     bounds={bounds}
+                >
                     {tasks.map((task: Task, index: number) => {
                         if (!task.address.location) return;
 
                         const [long, lat] = task.address.location.coordinates;
-
+                        bounds.extend({lat: lat, lng: long});
                         return <Marker position={{lat: lat, lng: long}} key={index}/>
                     })}
                 </Map>
