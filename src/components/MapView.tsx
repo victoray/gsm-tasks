@@ -11,11 +11,6 @@ const style = {
     height: "100%"
 };
 
-interface MarkerView {
-    latitude: number;
-    longitude: number;
-}
-
 const MapView = ({google}: MapView) => {
     const tasks = useSelector((state: any) => state.tasks);
     const bounds = new google.maps.LatLngBounds();
@@ -32,7 +27,7 @@ const MapView = ({google}: MapView) => {
 
                         const [long, lat] = task.address.location.coordinates;
                         bounds.extend({lat: lat, lng: long});
-                        return <Marker position={{lat: lat, lng: long}} key={index}/>
+                        return <Marker position={{lat: lat, lng: long}} key={task.id}/>
                     })}
                 </Map>
             }

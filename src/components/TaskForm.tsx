@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import gsmtasks from "../api/gsmtasks";
-import {Simulate} from "react-dom/test-utils";
 
 const data = {
     account: "https://gsmtasks.com/api/tasks/accounts/323de39c-eaee-47d2-8fb6-bab5b0bba3a2/",

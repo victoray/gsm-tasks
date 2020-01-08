@@ -55,7 +55,6 @@ code {
 .task {
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
 .task__header {
   height: 10rem;
@@ -63,7 +62,6 @@ code {
   font-size: 2rem;
   font-weight: bold;
   background-color: lightgrey;
-  align-self: stretch;
   margin-bottom: 2rem;
 }
 .task__input {
@@ -73,7 +71,6 @@ code {
   font-family: inherit;
   padding: 1.5rem;
   margin: 1rem;
-  align-self: stretch;
 }
 .task__input:focus {
   outline: none;
