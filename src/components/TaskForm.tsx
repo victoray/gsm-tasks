@@ -7,14 +7,17 @@ const data = {
 };
 
 const TaskForm = () => {
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState("Telliskivi 60, Tallinn");
 
     const onSubmit = () => {
         gsmtasks.post("/", {
             address: {
                 raw_address: value
             }, ...data
-        }).then(response => console.log(response))
+        }).then(response => console.log(response));
+
+        gsmtasks.get("/")
+            .then(response => console.log(response.data));
     };
     return (
         <div className="task">

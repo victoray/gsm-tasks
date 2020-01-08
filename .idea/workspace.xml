@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d67607-d861-4a4b-b648-6b335d023eff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/gsmtasks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MapView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MapView.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TaskForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/_map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578499145118</updated>
-      <workItem from="1578499146365" duration="6989000" />
+      <workItem from="1578499146365" duration="7601000" />
     </task>
     <servers />
   </component>
