@@ -27,9 +27,23 @@ code {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: unset;
+    grid-template-rows: min-content min-content;
+  }
+}
 
 .map {
-  overflow: auto;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .map {
+    grid-row: 2/-1;
+  }
+  .map > div > div > div {
+    width: 100% !important;
+  }
 }
 
 .task {
@@ -71,6 +85,11 @@ code {
 }
 .task__button:focus {
   outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .task {
+    margin: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

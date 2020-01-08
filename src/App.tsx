@@ -7,7 +7,9 @@ import TaskForm from "./components/TaskForm";
 const App: React.FC = () => {
     return (
         <div className={"container"}>
-            <MapView/>
+            <div className="map">
+                <MapView/>
+            </div>
             <TaskForm/>
         </div>
     );

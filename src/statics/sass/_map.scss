@@ -1,3 +1,13 @@
 .map {
-  overflow: auto;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    grid-row: 2/-1;
+
+    & > div > div > div {
+      width: 100% !important;
+    }
+  }
+
+
 }

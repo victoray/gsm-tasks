@@ -1,6 +1,6 @@
 *,
 *:after,
-*:before{
+*:before {
   box-sizing: border-box;
 }
 
@@ -30,4 +30,10 @@ code {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: unset;
+    grid-template-rows: min-content min-content;
+  }
 }
