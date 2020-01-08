@@ -8,10 +8,9 @@ export const useGetTasks = () => {
     const getTasks = () => {
         gsmtasks.get("/")
             .then(response => {
-                console.log(response.data);
                 dispatch({type: GET_TASKS, payload: response.data});
             });
     };
 
-    return getTasks
+    return getTasks;
 };

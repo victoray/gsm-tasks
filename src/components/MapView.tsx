@@ -16,21 +16,18 @@ interface MarkerView {
     longitude: number;
 }
 
-const MarkerView = React.memo(({latitude, longitude}: MarkerView) => {
-    return <Marker position={{lat: latitude, lng: longitude}}/>
-}, (prev, next) => {
-    return prev.longitude !== next.longitude && prev.latitude !== next.latitude;
-});
-
 const MapView = ({google}: MapView) => {
     const tasks = useSelector((state: any) => state.tasks);
+
+    //adjust zoomLevel based on the size of tasks
+    const zoomLevel = 12 - tasks.length / tasks.length * 1.5;
 
     return (
         <>
             {
                 // @ts-ignore
                 <Map google={google} style={style} initialCenter={{lat: 59.4370, lng: 24.7536}}
-                     zoom={8}>
+                     zoom={zoomLevel}>
                     {tasks.map((task: Task, index: number) => {
                         if (!task.address.location) return;
 
