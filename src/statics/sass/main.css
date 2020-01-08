@@ -28,6 +28,10 @@ code {
   grid-template-columns: 2fr 1fr;
 }
 
+.map {
+  overflow: auto;
+}
+
 .task {
   display: flex;
   flex-direction: column;
