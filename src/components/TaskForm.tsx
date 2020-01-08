@@ -11,13 +11,15 @@ const TaskForm = () => {
 
     const onSubmit = () => {
         if (!value) return;
-        
+
         gsmtasks.post("/", {
             address: {
                 raw_address: value
             }, ...data
         }).then(response => console.log(response))
             .catch(error => console.log(error));
+
+        setValue("");
     };
     return (
         <div className="task">
