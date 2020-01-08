@@ -9,7 +9,8 @@ export const useGetTasks = () => {
         gsmtasks.get("/")
             .then(response => {
                 dispatch({type: GET_TASKS, payload: response.data});
-            });
+            })
+            .catch(error => console.log(error));
     };
 
     return getTasks;

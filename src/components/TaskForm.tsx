@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import gsmtasks from "../api/gsmtasks";
+import {Simulate} from "react-dom/test-utils";
 
 const data = {
     account: "https://gsmtasks.com/api/tasks/accounts/323de39c-eaee-47d2-8fb6-bab5b0bba3a2/",
@@ -14,7 +15,8 @@ const TaskForm = () => {
             address: {
                 raw_address: value
             }, ...data
-        }).then(response => console.log(response));
+        }).then(response => console.log(response))
+            .catch(error => console.log(error));
     };
     return (
         <div className="task">
