@@ -15,9 +15,6 @@ const TaskForm = () => {
                 raw_address: value
             }, ...data
         }).then(response => console.log(response));
-
-        gsmtasks.get("/")
-            .then(response => console.log(response.data));
     };
     return (
         <div className="task">
