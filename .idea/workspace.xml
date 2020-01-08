@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8d67607-d861-4a4b-b648-6b335d023eff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/_taskForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/_taskForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/sass/main.css.map" afterDir="false" />
-    </list>
+    <list default="true" id="b8d67607-d861-4a4b-b648-6b335d023eff" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
