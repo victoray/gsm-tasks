@@ -37,11 +37,17 @@ code {
 .map {
   overflow: hidden;
 }
+.map > div > div {
+  width: 66.67% !important;
+}
+.map > div > div > div {
+  width: 100% !important;
+}
 @media only screen and (max-width: 768px) {
   .map {
     grid-row: 2/-1;
   }
-  .map > div > div > div {
+  .map > div > div {
     width: 100% !important;
   }
 }

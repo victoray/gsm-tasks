@@ -6,7 +6,6 @@ interface MapView {
 }
 
 const style = {
-    width: "66.67%",
     height: "100%"
 };
 const MapView = ({google}: MapView) => {
@@ -18,8 +17,6 @@ const MapView = ({google}: MapView) => {
                 // @ts-ignore
                 <Map google={google} style={style} initialCenter={{lat: 59.4370, lng: 24.7536}}>
                     <Marker
-                        title={'The marker`s title will appear as a tooltip.'}
-                        name={'SOMA'}
                         position={{lat: 59.4370, lng: 24.7536}}/>
                 </Map>
             }
