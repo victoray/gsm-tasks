@@ -2,14 +2,16 @@ import React, {useState} from "react";
 import gsmtasks from "../api/gsmtasks";
 
 const data = {
-    account: "https://gsmtasks.com/api/tasks/accounts/323de39c-eaee-47d2-8fb6-bab5b0bba3a2/",
+    account: "https://gsmtasks.com/api/tasks/accounts/3c786557-0199-40f7-a0ed-d0969be85e9d/",
     category: "assignment"
 };
 
 const TaskForm = () => {
-    const [value, setValue] = useState("Telliskivi 60, Tallinn");
+    const [value, setValue] = useState("");
 
     const onSubmit = () => {
+        if (!value) return;
+        
         gsmtasks.post("/", {
             address: {
                 raw_address: value
