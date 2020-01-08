@@ -15,12 +15,17 @@ const MapView = ({google}: MapView) => {
     const tasks = useSelector((state: any) => state.tasks);
     const bounds = new google.maps.LatLngBounds();
 
+    const params: any = {};
+
+    if (tasks.length >= 3) {
+        params["bounds"] = bounds;
+    }
     return (
         <>
             {
                 // @ts-ignore
                 <Map google={google} style={style} initialCenter={{lat: 59.4370, lng: 24.7536}}
-                     bounds={bounds}
+                     {...params}
                 >
                     {tasks.map((task: Task, index: number) => {
                         if (!task.address.location) return;
